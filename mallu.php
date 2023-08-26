@@ -80,7 +80,18 @@ class SameWordEthrePravshyamVanitundEnNokkan{
 
 }
 
+//checking string or word is palindrome or not
+//stringo wordo palindrome anon nokunu
+class PalindromeAnonNokkan{
+    public function PalindromeAnonNokkanullad($Palindrome){
 
+        $CleanString=preg_replace('/[^a-zA-Z0-9]/','',$Palindrome);
+        $CleanString=strtolower($CleanString);
+        $JoinAgain=strrev($CleanString);
+        return $CleanString === $JoinAgain;
+
+    }
+}
 
 
 
