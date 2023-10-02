@@ -5,10 +5,12 @@ Welcoming contributers
 Help Functions:
 Help(vedulla functions)//avshyamulla functionsine kurich ariyan
 HelpAll()//ella functione kurichum ariyan
-
+install command:
+npm i mallus-library 
 Usage example:
 
-Equalano("a","b");
+const mallu = require('mallus-library');
+mallu.Equalano("a","b")
 
 ouptut:
 false
