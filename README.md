@@ -4,7 +4,7 @@ This library is created with manglish languge specially for mallus(peoples from 
 Welcoming contributers
 
 Help Functions:
-Help(vedulla functions)//avshyamulla functionsine kurich ariyan
+Help(vedulla functions)//avshyamulla functionsine kurich ariyan,
 HelpAll()//ella functione kurichum ariyan
 
 install command:
