@@ -1,16 +1,16 @@
 # MallusLibrary
 
-### MallusLibrary is a Node.js library designed for developers in Kerala, India, who prefer working with Malayalam. This library provides a set of utility functions written in Malayalam to simplify common programming tasks. We welcome contributions from the community to expand and improve this library.
+MallusLibrary is a Node.js library designed for developers in Kerala, India, who prefer working with Malayalam. This library provides a set of utility functions written in Malayalam to simplify common programming tasks. We welcome contributions from the community to expand and improve this library.
 
 ## Installation
-### You can install MallusLibrary using npm:
+You can install MallusLibrary using npm:
 
 ```
 npm install mallus-library
 ```
 
 ## Usage
-### To use MallusLibrary in your Node.js application, require it and start using the provided functions:
+To use MallusLibrary in your Node.js application, require it and start using the provided functions:
 
 ```
 const mallu = require('mallus-library');
