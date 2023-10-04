@@ -1,20 +1,39 @@
 # MallusLibrary
 
-This library is created with manglish languge specially for mallus(peoples from kerala)
-Welcoming contributers
+MallusLibrary is a Node.js library designed for developers in Kerala, India, who prefer working with Malayalam. This library provides a set of utility functions written in Malayalam to simplify common programming tasks. We welcome contributions from the community to expand and improve this library.
 
-Help Functions:
-Help(vedulla functions)//avshyamulla functionsine kurich ariyan,
-HelpAll()//ella functione kurichum ariyan
+## Installation
+You can install MallusLibrary using npm:
 
-install command:
-npm i mallus-library 
+```
+npm install mallus-library
+```
 
-Usage example:
-const mallu = require('mallus-library'); 
-console.log(mallu.Equalano("a","b"));
+## Usage
+To use MallusLibrary in your Node.js application, require it and start using the provided functions:
 
-after run this command:
-node your_file_name//dont forget put your filename here
-ouptut:
-false
+```
+const mallu = require('mallus-library');
+```
+
+## Help Functions
+MallusLibrary includes a set of help functions to assist you:
+mallu.Help(vedulla functions)
+Avashyamulla functionsine kurichu ariyan.
+
+
+mallu.Help("vedulla functions");
+mallu.HelpAll();
+Ella functione kurichum ariyan.
+
+Example
+Here's an example of how to use one of the functions:
+
+```
+const mallu = require('mallus-library');
+const result = mallu.Equalano("a", "b");
+console.log(result);
+```
+
+## Contributing
+We welcome contributions from the community. If you have a Malayalam function that you would like to add or have suggestions for improvements, please feel free to open an issue or submit a pull request on our GitHub repository.
