@@ -1,18 +1,18 @@
- //help
+//help
 
- export function GetHelp(Topic){
+ function Help(Topic){
     var HelpData={
-        'truncate':'truncate cheyan',
-        'AddCheyan':'Numbers Add cheyan',
+        'TruncateChey':'truncate cheyan',
+        'AddChey':'Numbers Add cheyan',
         'Equalano':'randu values equalano aleyon nokunu',
-        'FirstLetterMathramValuthkan':'adyathe letter upper casilek convert cheyunu',
-        'StringReverseCheyan':'string reverse cheyunu',
-        'SameWordEthrePravshyamVanitundEnNokkan':'same word ethra thavana und en nokunu',
-        'PalindromeAnonNokkan':'wordo stringo palindromeanon nokunu',
-        'EthraLetterOroninumUndennokan':'ethra paravshyam same words repeat ayi vanitunden nokunu',
-        'TruncateCheyyan':'string truncate cheyan',
-        'EthNumberAnValuthenNokkan':'eth number an valuthen nokunu',
-        'EthNumberAnCheruthenNokkan':'eth number cheruthanen nokunu'
+        'FirstLetterMathramValuthak':'adyathe letter upper casilek convert cheyunu',
+        'StringReverseChey':'string reverse cheyunu',
+        'SameWordEthrePravshyamVanitundEnNok':'same word ethra thavana und en nokunu',
+        'PalindromeAnonNok':'wordo stringo palindromeanon nokunu',
+        'EthraLetterOroninumUndennok':'ethra paravshyam same words repeat ayi vanitunden nokunu',
+        'TruncateChey':'string truncate cheyan',
+        'EthNumberAnValuthenNok':'eth number an valuthen nokunu',
+        'EthNumberAnCheruthenNok':'eth number cheruthanen nokunu'
 
 
 
@@ -20,26 +20,43 @@
     if(HelpData[Topic]){
         return HelpData[Topic]
     }else{
-        return 'nothing found for this'
+       "nothing found"
     }
 
  }
+
+
+ function HelpAll(){
+
+    const HelpAll = {
+    'TruncateChey':'truncate cheyan',
+    'AddChey':'Numbers Add cheyan',
+    'Equalano':'randu values equalano aleyon nokunu',
+    'FirstLetterMathramValuthak':'adyathe letter upper casilek convert cheyunu',
+    'StringReverseChey':'string reverse cheyunu',
+    'SameWordEthrePravshyamVanitundEnNok':'same word ethra thavana und en nokunu',
+    'PalindromeAnonNok':'wordo stringo palindromeanon nokunu',
+    'EthraLetterOroninumUndennok':'ethra paravshyam same words repeat ayi vanitunden nokunu',
+    'TruncateChey':'string truncate cheyan',
+    'EthNumberAnValuthenNok':'eth number an valuthen nokunu',
+    'EthNumberAnValuth':'eth number cheruthanen nokunu'
+    }
+    return HelpAll
+ }
+
+
  
  //Adding number
 //Number add cheythu athinte total kanunu
-export function AddCheyan(NumbersAdd){
+ function AddChey(NumbersAdd){
    
     try{
         //try cheyunu array anon nokunu alel error nere catch il poyi print cheyunu
         if(!Array.isArray(NumbersAdd)){
             throw new Error("array ayi pass cheyenam")
         }
-        if(typeof n !=='number'){
-            throw new Error("number ayi pass cheyenam")
-            
-
-        }
-            //array anel ith work cheyum
+      
+          //array anel ith work cheyum
             let sum=0
             for( const n of NumbersAdd){
                  //ivide kutnunu kitiyan numbers. sum 0 akivechitund add cheynan
@@ -65,7 +82,7 @@ export function AddCheyan(NumbersAdd){
 //check if one value equal to another value
 //randu values equalano aleyon nokunu
 
-export function Equalano(First,Second){
+ function Equalano(First,Second){
 
     //type randinte onanon nokunu
 
@@ -81,7 +98,7 @@ return First === Second
 
 //converting first letter to upper case
 //adyathe letter upper casilek convert cheyunu
-export function FirstLetterMathramValuthkan(stringUpper){
+ function FirstLetterMathramValuthak(stringUpper){
     //adyam first index edukunu and upper case akunu pinne last slice second index thot add cheyunu.
     return stringUpper.charAt(0).toUpperCase() + stringUpper.slice(1)
 
@@ -89,21 +106,21 @@ export function FirstLetterMathramValuthkan(stringUpper){
 
 // reverse string
 //string reverse cheyunu
-export function StringReverseCheyan(stringReverse){
+  function StringReverseChey(stringReverse){
     //first array ayi split cheyunu ennit ath reverse order aki vekunu last ellam kode join cheyunu
     return stringReverse.split("").reverse().join("");
 }
 //count the number of times a specific word appears in a string
 //same word ethra thavana und en nokunu
 
-export function SameWordEthrePravshyamVanitundEnNokkan(MainString,SubString){
+ function SameWordEthrePravshyamVanitundEnNok(MainString,SubString){
     var occurense=MainString.split(SubString).length -1
     return occurense
     
 }
 //checking word or string Palindrome
 //wordo stringo palindromeanon nokunu
-export function PalindromeAnonNokkan(Palindrome){
+ function PalindromeAnonNok(Palindrome){
     var CleanString=Palindrome.replace(/[^a-zA-Z0-9]/g,'').toLowerCase()
     var JoinAgain=CleanString.split('').reverse().join('')
 
@@ -113,7 +130,7 @@ export function PalindromeAnonNokkan(Palindrome){
 //checking how much time that word come repeat
 //ethra paravshyam same words repeat ayi vanitunden nokunu
 //@return  object
-export function EthraLetterOroninumUndennokan(paragraph){
+ function EthraLetterOroninumUndenNok(paragraph){
    const words=paragraph.toLowerCase().match(/\b\w+\b/g);
     const WordsObject={}
     if(words){
@@ -134,7 +151,7 @@ export function EthraLetterOroninumUndennokan(paragraph){
 }
 
 // string truncate cheyan
-export function TruncateCheyyan(text,limit,addEclipps=true){
+ function TruncateChey(text,limit,addEclipps=true){
     if(text.length <= limit){
         return text;
     }
@@ -149,7 +166,7 @@ export function TruncateCheyyan(text,limit,addEclipps=true){
 
 }
 //eth number an valuthen nokunu
-export function EthNumberAnValuthenNokkan(numbers){
+ function EthNumberAnValuthenNok(numbers){
     try{
         if(!Array.isArray(numbers)){
             throw new Error("Array ayi pass cheyenam")
@@ -178,7 +195,7 @@ export function EthNumberAnValuthenNokkan(numbers){
 
 }
 //eth number an cheruthen nokunu
-export function EthNumberAnCheruthenNokkan(numbers){
+ function EthNumberAnCheruthenNok(numbers){
     try{
         if(!Array.isArray(numbers)){
             throw new Error("Array ayi pass cheyenam")
@@ -201,4 +218,23 @@ export function EthNumberAnCheruthenNokkan(numbers){
     }
 }
 
+module.exports = {
+        Help,
+        HelpAll,
+        TruncateChey,
+        AddChey,
+        Equalano,
+        FirstLetterMathramValuthak,
+        StringReverseChey,
+        SameWordEthrePravshyamVanitundEnNok,
+        PalindromeAnonNok,
+        EthraLetterOroninumUndenNok,
+        TruncateChey,
+        EthNumberAnValuthenNok,
+        EthNumberAnCheruthenNok,
+
+
+
+
+  };
 
